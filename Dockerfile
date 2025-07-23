@@ -36,4 +36,4 @@ RUN sudo apt update && \
     sudo apt install -y --no-install-recommends nsight-systems-cli
 
 # Clean up
-RUN apt clean && rm -rf /var/lib/apt/lists/*
+RUN sudo apt clean && sudo rm -rf /var/lib/apt/lists/*
